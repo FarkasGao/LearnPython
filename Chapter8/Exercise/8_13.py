@@ -9,3 +9,11 @@ user_profile = build_profile('albert', 'einstein',
                              field = 'physics')
                              
 print(user_profile)
+
+my_profile = build_profile('Gao', 'yan', 
+                            location = 'shandong',
+                            job = 'student',
+                            field = 'chemistry',
+                            favorite = 'programme')
+                            
+print(my_profile)
