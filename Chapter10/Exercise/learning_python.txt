@@ -1,0 +1,3 @@
+In Python you can create a new variable
+In Python you can create a new list
+In Python you can Traverse the list
