@@ -1,9 +1,12 @@
 #I just need Let it go first
 
 #A good decision, And now I can finish it, A simple game
+
+#I just find I'd better use dictionary to finish it 
 import random
 
 your_money = 10
+list2 = {'green':1, 'yellow':3, 'red':5}
 list1 = ['green', 'yellow', 'red']
 while (True):
     if your_money == 0:
@@ -24,9 +27,9 @@ while (True):
     
     green = 1; yellow = 3; red = 5""")
     print(f"You have ${your_money} now")
-    print("Would you want to play this game?")
+    print("Would you want to play this game?(input 'y' to start)")
     answer = input().lower()
-    if answer == "yes":
+    if answer == "y":
         random.shuffle(list1)
         print(list1)
         print("Please input 1 , 2 or 3.")
@@ -41,13 +44,8 @@ while (True):
                 print("Please input 1 , 2 or 3.") 
             else:
                 time += 1
-                Hit = list1[target]
-                if Hit == 'green':
-                    score += 1
-                if Hit == 'yellow':
-                    score += 3
-                if Hit == 'red':
-                    score += 5
+                Hit = list2[list1[target]]
+                score +=Hit
         if score == 25:
             your_money += 15
             print("You win $15")

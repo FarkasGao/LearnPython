@@ -3,7 +3,7 @@ import pygame
 
 screen = pygame.display.set_mode((1080,720))
 screen_rect = screen.get_rect()
-image = pygame.image.load("tree-2.bmp")
+image = pygame.image.load("11.bmp")
 rect = image.get_rect()
 while True:
     screen.fill((100, 0, 230))
